@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+              h1{
+                color: aliceblue;
+                background-color: blueviolet;
+                padding: 20px;
+                width: 50%;
+              }
+    </style>
+</head>
+<body style="background-color: black ;">
+    <center><h1>jinja printing</h1>
+    <h1>we are printing the data which is coming from backend</h1>
+    
+    <!-- <h1>{{name}}</h1>
+    <h1>{{age}}</h1> -->
+
+
+    
+    <!-- {% if age > 20 %}
+    <h1>{{name}}</h1>
+    <h1>{{age}}</h1>
+    {% endif %} -->
+
+    {% if age > 26 %}
+    <h1>{{name}}</h1>
+    <h1>{{age}}</h1>
+    {% else %}
+    <h1> your age is not sutabale to use this app</h1>
+    {% endif %} 
+
+
+
+</center>
+</body>
+</html>
