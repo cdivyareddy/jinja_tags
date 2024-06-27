@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+              h1{
+                color: aliceblue;
+                background-color: blueviolet;
+                padding: 20px;
+                width: 50%;
+              }
+    </style>
+</head>
+<body style="background-color: black ;">
+    <center><h1>jinja printing</h1>
+    <h1>we are printing the data which is coming from backend</h1>
+    
+   {% if age < 30 %} 
+            {% if age < 18 %}
+                <h1>{{ name}} is going to school</h1>
+            {% elif age < 26 %} 
+                <h1>{{name}} is going to college</h1>
+            {% else  %}
+                <h1>{{name}} is going to work</h1>
+            {% endif %}
+    {% else %}
+             {%  if age > 30 and age < 50 %}
+             <h1> {{name}} is enjoying the family life</h1>
+             {% elif age > 50 and age < 60 %}
+             <h1>{{name}} felling happy by seing family</h1>
+             {% else %}
+             <h1>{{name}} is go to yathras</h1>
+             {% endif %}
+    {% endif %}
+
+
+</center>
+</body>
+</html>

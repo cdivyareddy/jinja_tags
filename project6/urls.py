@@ -19,5 +19,8 @@ from app.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('jinja_print/',jinja_print,name='jinja_print')
+    path('jinja_print/',jinja_print,name='jinja_print'),
+    path('ifelif/',ifelif,name='ifelif'),
+    path('nestedif/',nestedif,name='nestedif'),
+    path('forloop/',forloop,name='forloop'),
 ]
